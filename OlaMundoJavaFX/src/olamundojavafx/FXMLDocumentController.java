@@ -22,12 +22,18 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Label lblMensagem;
     private Button btnClick;
+    private Button btnNotClick;
     
     @FXML
     private void clicouBotao(ActionEvent event) {
         lblMensagem.setText("Olá Mundo");
     }
     
+    @FXML
+        private void clicouProibido(ActionEvent event) {
+        lblMensagem.setText("NÃO CLICA ANIMAL!!");
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

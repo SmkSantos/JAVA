@@ -7,13 +7,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="olamundojavafx.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="olamundojavafx.FXMLDocumentController">
    <children>
       <Button fx:id="btnClick" layoutX="104.0" layoutY="135.0" mnemonicParsing="false" onAction="#clicouBotao" text="Clique em Mim" />
-      <Label fx:id="lblMensagem" layoutX="29.0" layoutY="73.0" prefHeight="27.0" prefWidth="247.0" text="Vai aparecer uma mensagem" textFill="#ff0e0e">
+      <Label fx:id="lblMensagem" layoutX="42.0" layoutY="49.0" prefHeight="27.0" prefWidth="247.0" text="Vai aparecer uma mensagem" textFill="#ff0e0e">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
+      <Button fx:id="btnNotClick" layoutX="86.0" layoutY="161.0" mnemonicParsing="false" onAction="#clicouProibido" text="NAO CLIQUE EM MIM" />
    </children>
 </AnchorPane>
