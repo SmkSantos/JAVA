@@ -6,8 +6,6 @@
 package com.Loiane.cursojava.Exec;
 
 import java.util.Scanner;
-import java.lang.Math;
-import java.text.Format;
 /**
  *
  * @author samue

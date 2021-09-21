@@ -15,6 +15,7 @@ public class Exercicio2 {
     public static void main(String[] args) {
         Scanner num= new Scanner(System.in);
         //deixar sempre aspas em branco
+        System.out.println("Digite um numero:");
         int numero= num.nextInt();
         
         System.out.println("O número informado foi: "+ numero);

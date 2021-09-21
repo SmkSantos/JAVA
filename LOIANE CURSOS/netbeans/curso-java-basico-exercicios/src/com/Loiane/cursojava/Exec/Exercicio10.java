@@ -16,10 +16,10 @@ public class Exercicio10 {
         
         Scanner scan= new Scanner(System.in);
         
-        System.out.println("Digite o total de graus em Fahrenheit: ");
+        System.out.println("Digite o total de graus em Celsius: ");
         double grFh= scan.nextDouble();
-        
-        double grCe= (grFh-32)* 5/9;
+        //Errei a fórmula
+        double grCe= (grFh*1.8)+ 32;
         
         System.out.println("A conversão em ºC é de: "+ grCe);
     }

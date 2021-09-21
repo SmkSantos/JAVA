@@ -27,7 +27,5 @@ public class Exercicio14 {
         double tempo= mb/mbps;
         double minuto= tempo/60.0;
         System.out.println(tempo);
-        System.out.printf("%.2f",minuto);
-        System.out.println("");
     }
 }
