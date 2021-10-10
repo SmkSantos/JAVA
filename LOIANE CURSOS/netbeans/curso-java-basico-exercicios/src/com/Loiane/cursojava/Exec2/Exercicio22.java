@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.Loiane.cursojava.Exec;
+package com.Loiane.cursojava.Exec2;
 import java.util.Scanner;
 /**
  *
@@ -15,51 +15,47 @@ public class Exercicio22 {
         Scanner scan= new Scanner(System.in);
         
         //Variáveis
-        double valor_ttl=0,valor_desconto=0;
+        double vlrMc=0, vlrMrg=0,vlrCmp=0.0,desconto;
+        int ttlqtd;
         
         System.out.println("Bem Vindo Ao Meu HortFrut");
         System.out.println("Nossas promoções");
         System.out.println("Até 5 kg, você para na Maçã R$2,50 por KG e mais que 5kg, você só paga R$ 2,20 por KG ");
         System.out.println("Até 5 kg, você para na Morango R$1,80 por KG e mais que 5kg, você só paga R$ 1,50 por KG ");
-        System.out.println("E em compras acima de R$25,00, garante 10% off\nEai, o que você irá pedir?\n1-Maçã\n2-Morango\nR:");
-        int escolha= scan.nextInt();
-        System.out.println("Quantos KGs?");
-        int qtdKg= scan.nextInt();
+        System.out.println("E em compras acima de R$25,00, garante 10% off\n");
+        System.out.println("Quantos KGs de maçã?");
+        int qtdMc= scan.nextInt();
+        System.out.println("Quantos KGs de morango?");
+        int qtdMrg= scan.nextInt();
         
-        switch(escolha){
-            case 1: 
-               if(qtdKg > 5){
-                   if(qtdKg > 8){
-                        valor_ttl= (1.50 * qtdKg);
-                        valor_desconto= valor_ttl-(valor_ttl*0.25);
-                        System.out.println("Você vai pagar: "+valor_desconto);
-                   }else{
-                        valor_ttl= (1.50 * qtdKg);  
-                        System.out.println("Você vai pagar: "+ valor_ttl);
-                   }
-               }else{
-                   valor_ttl= (1.80 * qtdKg);
-                   System.out.println("Você vai pagar: "+ valor_ttl);
-               };
-            break;
-            
-            case 2:
-               if(qtdKg > 5){
-                   if(qtdKg > 8){
-                        valor_ttl= (2.20 * qtdKg);
-                        valor_desconto= valor_ttl-(valor_ttl*0.25);
-                        System.out.println("Você vai pagar: "+valor_desconto);
-                   }else{
-                        valor_ttl= (2.20 * qtdKg);  
-                        System.out.println("Você vai pagar: "+ valor_ttl);
-                   }
-               }else{
-                   valor_ttl= (2.50 * qtdKg);
-                   System.out.println("Você vai pagar: "+ valor_ttl);
-               };
-            break;
-            
-            default: System.out.println("Valor incorreto!!!!!");
+        
+        // definição de preços para maçãs
+        
+        if (qtdMc > 5){
+            vlrMc = 1.5;
+        } else {
+            vlrMc = 1.8;
         }
+        
+        // definição de preços para os morangos
+        
+        if (qtdMrg > 5){
+            vlrMrg= 2.2;
+        }else{
+            vlrMrg= 2.5;
+        }
+       
+        ttlqtd= qtdMc + qtdMrg;
+        vlrCmp= (vlrMc * qtdMc)+(vlrMrg * qtdMrg);
+        
+        if((ttlqtd > 8) || (vlrCmp > 25.0)){
+            desconto= 10;
+            vlrCmp= vlrCmp - ((vlrCmp/100) * desconto);
+        } 
+        
+        System.out.println("Maçãs: " + qtdMc);
+        System.out.println("Morango: " + qtdMrg);
+        System.out.println("\nTotal a Pagar: " + vlrCmp );
+        
     }
 }

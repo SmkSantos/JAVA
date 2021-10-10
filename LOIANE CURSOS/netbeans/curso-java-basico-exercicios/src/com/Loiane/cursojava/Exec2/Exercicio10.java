@@ -15,12 +15,15 @@ public class Exercicio10 {
         Scanner scan= new Scanner(System.in);
         
         System.out.println("Qual Período você estuda?\nM-Matutino\nV-Vespertino\nN-Noturno\n");
-        String periodo= scan.nextLine();
+        String periodo= scan.next();
         
         switch(periodo){
             
-            case "M": System.out.println("Bom dia!"); break;
+            case "m":                                        ;
+            case "M": System.out.println("Bom dia!");   break;
+            case "v":                                        ;
             case "V": System.out.println("Boa tarde!"); break;
+            case "n":                                        ;
             case "N": System.out.println("Boa noite!"); break;
             default: System.out.println("Valor Inválido"); break;
         }

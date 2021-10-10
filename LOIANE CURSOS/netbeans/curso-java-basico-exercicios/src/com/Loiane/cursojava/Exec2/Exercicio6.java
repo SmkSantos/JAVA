@@ -20,9 +20,9 @@ public class Exercicio6 {
         System.out.println("Digite o Terceiro Numero: ");
         int num3= scan.nextInt();
         
-        if( num1 > num2 && num1 > num3){
+        if( num1 >= num2 && num1 >= num3){
             System.out.println("O maior Numero é: "+ num1+ "! O primeiro digitado.");
-        }else if( num2 > num1 && num2 > num3){
+        }else if( num2 >= num1 && num2 >= num3){
             System.out.println("O maior Numero é: "+ num2+ "! O segundo digitado.");
         }else
             System.out.println("O Maior Número é: "+ num3 + "! O terceiro digitado.");

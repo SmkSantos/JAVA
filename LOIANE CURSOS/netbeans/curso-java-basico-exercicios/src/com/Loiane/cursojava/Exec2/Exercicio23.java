@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.Loiane.cursojava.Exec;
+package com.Loiane.cursojava.Exec2;
 import java.util.Scanner;
 /**
  *
@@ -14,8 +14,8 @@ public class Exercicio23 {
         
         Scanner scan= new Scanner(System.in);
         
-        double file_var= 4.90,file_atac=5.80,alc_var=5.90,alc_atac=6.80,pic_var=6.90,pic_atac=7.80, vl_compra,preco,desconto=0.0;
-        int opcao,qtd;
+        double file_var= 4.90,qtd,file_atac=5.80,alc_var=5.90,alc_atac=6.80,pic_var=6.90,pic_atac=7.80, vl_compra,preco,desconto=0.0;
+        int opcao;
         String opc_pgto,tipo,tipo_pgto;
         
         System.out.println("Bem Vindos ao HiperMercado Tabajara");
@@ -31,7 +31,7 @@ public class Exercicio23 {
         if(opcao==1){
             tipo=  "Filé Duplo";
             System.out.println("Quantos kg irá levar?");
-            qtd= scan.nextInt();
+            qtd= scan.nextDouble();
             System.out.println("Qual a Forma de Pagamento? D- Dinheiro ou T- Cartão Tabajara");
             opc_pgto= scan.next();
             
@@ -44,7 +44,7 @@ public class Exercicio23 {
                         vl_compra= qtd * preco;
                         
                 // Define a Forma de Pagamento        
-                if(opc_pgto.equals("T") || opc_pgto.equals("t")){
+                if(opc_pgto.equalsIgnoreCase("t")){
                     tipo_pgto= "Cartão Tabajara";
                     System.out.println("Você escolheu a opção: Cartão Tabajara");
                     //Aplicando o desconto de 5%
@@ -75,7 +75,7 @@ public class Exercicio23 {
         } else if(opcao==2){
                 tipo=  "Alcatra";
                 System.out.println("Quantos kg irá levar?");
-                qtd= scan.nextInt();
+                qtd= scan.nextDouble();
                 System.out.println("Qual a Forma de Pagamento? D- Dinheiro ou T- Cartão Tabajara");
                 opc_pgto= scan.next();
 
@@ -88,7 +88,7 @@ public class Exercicio23 {
                             vl_compra= qtd * preco;
 
                     // Define a Forma de Pagamento        
-                    if(opc_pgto.equals("T") || opc_pgto.equals("t")){
+                    if(opc_pgto.equalsIgnoreCase("t")){
                         tipo_pgto= "Cartão Tabajara";
                         System.out.println("Você escolheu a opção: Cartão Tabajara");
                         //Aplicando o desconto de 5%
@@ -102,7 +102,7 @@ public class Exercicio23 {
                         vl_compra=(qtd*preco)-desconto;
                         System.out.println("Valor do Desconto: " + vl_compra);
                         System.out.println("Valor a Pagar: " + desconto );
-                        } else if (opc_pgto.equals("D") || opc_pgto.equals("d")){
+                        } else if (opc_pgto.equalsIgnoreCase("d")){
                             tipo_pgto= "Débito";
     //                        System.out.println(vl_compra);
                             System.out.println("           Cupom Fiscal            ");
@@ -119,7 +119,7 @@ public class Exercicio23 {
           }else if(opcao==3){
                 tipo=  "Picanha";
                 System.out.println("Quantos kg irá levar?");
-                qtd= scan.nextInt();
+                qtd= scan.nextDouble();
                 System.out.println("Qual a Forma de Pagamento? D- Dinheiro ou T- Cartão Tabajara");
                 opc_pgto= scan.next();
 
@@ -132,7 +132,7 @@ public class Exercicio23 {
                             vl_compra= qtd * preco;
 
                     // Define a Forma de Pagamento        
-                    if(opc_pgto.equals("T") || opc_pgto.equals("t") || opc_pgto.equals("t")){
+                    if(opc_pgto.equalsIgnoreCase("t")){
                         tipo_pgto= "Cartão Tabajara";
                         System.out.println("Você escolheu a opção: Cartão Tabajara");
                         //Aplicando o desconto de 5%
@@ -146,7 +146,7 @@ public class Exercicio23 {
                         vl_compra=(qtd*preco)-desconto;
                         System.out.println("Valor do Desconto: " + vl_compra);
                         System.out.println("Valor a Pagar: " + desconto );
-                        } else if (opc_pgto.equals("D") || opc_pgto.equals("d")){
+                        } else if (opc_pgto.equalsIgnoreCase("d")){
                             tipo_pgto= "Débito";
     //                        System.out.println(vl_compra);
                             System.out.println("           Cupom Fiscal            ");
@@ -165,3 +165,4 @@ public class Exercicio23 {
           }
     }   
 }
+// Poderia ter facilitado, mas foi necessário para aprender, utiliza para validar e tentar minimizar

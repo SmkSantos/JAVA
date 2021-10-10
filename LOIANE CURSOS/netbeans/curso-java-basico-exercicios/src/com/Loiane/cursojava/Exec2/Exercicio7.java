@@ -22,14 +22,17 @@ public class Exercicio7 {
             System.out.println("Digite o Terceiro Numero: ");
             int num3= scan.nextInt();
 
-            if(num1 > num2 && num3 < num2){
-            System.out.println("Numero Maior: " +num1+ " e menor: "+ num3);
-            } else if(num2 > num1 && num3 < num1){
-                System.out.println("Numero Maior: " +num2+ " e menor: "+ num3);
-            } else if(num3 > num2  && num2 < num1){
-                System.out.println("MAIOR: "+ num3+" menor: "+ num2);
-            }else{
-                System.out.println("MAIOR:" + num3+ " menor: "+ num1);
-            }
+            if( num1 >= num2 && num1 >= num3){
+                        System.out.println("O maior Numero é: "+ num1+ "! O primeiro digitado.");
+                    }else if( num2 >= num1 && num2 >= num3){
+                        System.out.println("O maior Numero é: "+ num2+ "! O segundo digitado.");
+                    }else
+                        System.out.println("O Menor Número é: "+ num3 + "! O terceiro digitado.");
+            if( num1 <= num2 && num1 <= num3){
+                        System.out.println("O menor Numero é: "+ num1+ "! O primeiro digitado.");
+                    }else if( num2 <= num1 && num2 <= num3){
+                        System.out.println("O menor Numero é: "+ num2+ "! O segundo digitado.");
+                    }else
+                        System.out.println("O Menor Número é: "+ num3 + "! O terceiro digitado.");
     }
 }

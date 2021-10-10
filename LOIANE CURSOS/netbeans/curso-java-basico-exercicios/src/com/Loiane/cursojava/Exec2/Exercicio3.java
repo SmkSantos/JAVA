@@ -18,9 +18,9 @@ public class Exercicio3 {
         System.out.println("Digite M ou F: ");
         String letra= scan.nextLine();
         
-        if (letra.equals("M")||letra.equals("m")){
+        if (letra.equalsIgnoreCase("m")){
             System.out.println("M - Masculino");
-        }else if(letra.equals("F")|| letra.equals("f")){
+        }else if(letra.equalsIgnoreCase("F")){
             System.out.println("F - Feminino");
         } else {
             System.out.println("Sexo Inválido");

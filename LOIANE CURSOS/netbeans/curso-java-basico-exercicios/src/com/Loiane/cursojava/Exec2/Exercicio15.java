@@ -24,8 +24,8 @@ public class Exercicio15 {
         int lado3=scan.nextInt();
         
         
-        if((lado1+lado2 > lado3)&& (lado2 + lado3 > lado1) && (lado1+lado3 > lado2)){
-            
+        if((lado1+lado2 > lado3) || (lado2 + lado3 > lado1) || (lado1+lado3 > lado2)){
+           //corrigida de && para || 
             trgl="T";
             System.out.println("É triângulo");
         } else

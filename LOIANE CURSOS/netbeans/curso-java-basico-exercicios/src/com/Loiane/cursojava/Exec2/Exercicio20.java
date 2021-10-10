@@ -26,20 +26,20 @@ public class Exercicio20 {
         System.out.println("Já trabalhou com a vítima?");
         String perg5= scan.nextLine();
         
-        if (perg1.equals("S")){
+        if (perg1.equalsIgnoreCase("S")){
             a+=1;
         }
         
-        if(perg2.equals("S")){
+        if(perg2.equalsIgnoreCase("S")){
             a+=1;
         }
-        if(perg3.equals("S")){
+        if(perg3.equalsIgnoreCase("S")){
             a+=1;
         }
-        if(perg4.equals("S")){
+        if(perg4.equalsIgnoreCase("S")){
             a+=1;
         }
-        if(perg5.equals("S")){
+        if(perg5.equalsIgnoreCase("S")){
             a+=1;
         }
         
@@ -49,9 +49,10 @@ public class Exercicio20 {
             case 4: System.out.println("Você é cúmplice do assassinato.");
             case 3: System.out.println("Você é cúmplice do assassinato.");break;
             case 2: System.out.println("Pode sair, mas é suspeito de um assassinato. NÃO SAIA DA CIDADE!!");break;
-            case 1: System.out.println("Desculpe-nos o incoveniente, pode ir.");break;
-            default: System.out.println("VOCÊ FEZ ALGO ERRADO!!!");break;
+            case 1: 
+            default:System.out.println("Desculpe-nos o incoveniente, pode ir."); ;break;
         }
+        // Corrigido detalhe de todas as perguntas serem não
         
     }
 }

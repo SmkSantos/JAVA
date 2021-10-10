@@ -19,15 +19,23 @@ public class Exercicio4 {
         
         /*para que haja entendimento, a questão solicita vogal ou consoante
           não há determinação que precise ser só letras
-        */
+        */if (letra.length( )> 1){
+            System.out.println("Isso não é uma letra!!!");
+        }else{
+
             switch(letra){
-            case "a": System.out.println("vogal");break;
-            case "e": System.out.println("vogal");break;
-            case "i": System.out.println("vogal");break;
-            case "o": System.out.println("vogal");break;
-            case "u": System.out.println("vogal");break;
+            case "a": System.out.println("vogal");
+            case "e": System.out.println("vogal");
+            case "i": System.out.println("vogal");
+            case "o": System.out.println("vogal");
+            case "u": System.out.println("vogal");
+            case "A": System.out.println("vogal");
+            case "E": System.out.println("vogal");
+            case "I": System.out.println("vogal");
+            case "O": System.out.println("vogal");
+            case "U": System.out.println("vogal");
             default: System.out.println("Consoante");
-        }
+        }}
         
         
     }

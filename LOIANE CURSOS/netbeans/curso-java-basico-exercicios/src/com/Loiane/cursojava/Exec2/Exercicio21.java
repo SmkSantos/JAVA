@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.Loiane.cursojava.Exec;
+package com.Loiane.cursojava.Exec2;
 import java.util.Scanner;
 /**
  *
@@ -40,9 +40,11 @@ public class Exercicio21 {
                 } else if(litros <=20 ){
                            ttlAc= litros*(ltAc-(ltAc*0.03));
                            System.out.println("Olá, por "+ litros+"l, você pagou"+ ttlAc+". Obtendo R$"+(ltAc*0.03)+" de lucro.");
-                           };
+                           };break;
             default: System.out.println("Não existe essa opção de combustível no nosso posto...");
         }
+        
+        //´pode melhorar o código no conceito dos if's
         
     }
 }

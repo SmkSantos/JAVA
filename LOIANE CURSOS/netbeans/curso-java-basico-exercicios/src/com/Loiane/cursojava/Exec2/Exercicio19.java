@@ -80,6 +80,6 @@ public class Exercicio19 {
                 }; break;
             default: System.out.println("ENTRADA INVÁLIDA");; break;
         }
-        
+        // pode-se melhorar, usando o case só para as operações e fazer os processos posteriores
     }
 }

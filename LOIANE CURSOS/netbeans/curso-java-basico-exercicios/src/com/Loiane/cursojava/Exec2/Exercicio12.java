@@ -70,7 +70,11 @@ public class Exercicio12 {
                         System.out.println("Total de Descontos: R$ "+ tt_dsc + "\nSalário Líquido: R$ "+slr_lq);
                         
                     }
-        
+                   
+        //Mesmo processo do exercício anterior se encaixa aqui.
+        //nos if's, seria legal colocar apenas o valor da porcentagem e depois da decisão, 
+        //realizava o processo com formulas predefinidas e realizando o calculo
+        //Por exemplo: a porcentagem do ir nos nos ifs, e o calculo do valor total posteriormente.
         
     }
 }
